@@ -11,7 +11,7 @@ spec:
   template:
     metadata:
       labels:
-        app: compass-ci-web
+        comp: compass-ci-web
     spec:
       containers:
         - name: compassciweb
