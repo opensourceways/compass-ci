@@ -4,7 +4,7 @@ metadata:
   name: compass-ci-web
 spec:
   selector:
-    app: compass-ci-web
+    comp: compass-ci-web
   ports:
     - name: compass-ci-web-read-port
       port: 80
