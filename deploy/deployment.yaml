@@ -1,0 +1,22 @@
+# Deployment for packagemanage service
+---
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: compass-ci-web
+spec:
+  selector:
+    matchLabels:
+      app: compass-ci-web
+  template:
+    metadata:
+      labels:
+        app: compass-ci-web
+    spec:
+      containers:
+        - name: compassciweb
+          image: opensourceway/compassciweb:v1.0
+          resources:
+            requests:
+              cpu: 2000m
+              memory: 2000Mi
